@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic tac toe Human Vs Computer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Play Tic Tac Toe</h1>
+    </header>
+    <nav><a href="./comp.html">Human Vs Human</a></nav>
+    <main>
+      <button class="btn clicked" id="x">X</button>
+      <button class="btn" id="o">O</button>
+
+      <p id="result"></p>
+      <div class="board">
+        <div class="item bt bl" data-info="1"></div>
+        <div class="item bt" data-info="2"></div>
+        <div class="item bt br" data-info="3"></div>
+        <div class="item bl" data-info="4"></div>
+        <div class="item" data-info="5"></div>
+        <div class="item br" data-info="6"></div>
+        <div class="item bl bb" data-info="7"></div>
+        <div class="item bb" data-info="8"></div>
+        <div class="item bb br" data-info="9"></div>
+      </div>
+      <button class="btn" id="restart">Restart</button>
+    </main>
+    <footer>
+      <p>&copy; 2021</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

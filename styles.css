@@ -1,0 +1,226 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-size: 100%;
+}
+
+header {
+  background-color: teal;
+}
+
+header h1 {
+  padding: 1em;
+  font-family: garamond serif;
+}
+
+
+nav {
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+nav a {
+  color: blue;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1em;
+  
+  width: -webkit-max-content;
+  
+  width: -moz-max-content;
+  
+  width: max-content;
+  float: right;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  background-color: rgb(202, 197, 197);
+  color: black;
+  text-decoration: none;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main {
+  min-height: 90vh;
+  position: relative;
+}
+
+.btn {
+  padding: 1em;
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 600;
+  width: 180px;
+  background-color: teal;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn#restart {
+  margin-top: 0;
+}
+
+.btn:hover {
+  background-color: rgb(4, 48, 44);
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
+}
+
+.board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 0 auto 0 auto;
+  grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto 0 auto 0 auto;
+  grid-template-rows: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 0;
+  padding: 1em;
+  background-color: rgb(33, 31, 31);
+  width: 50%;
+  margin: 1em auto;
+  border-radius: 4px;
+}
+
+.board > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.board > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.board > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.board > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.board > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.board > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.board > *:nth-child(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.board > *:nth-child(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.board > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.item {
+  border: 2px solid white;
+  width: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  font-weight: 900;
+  cursor: pointer;
+  height: 1.5em;
+}
+
+.item.bt {
+  border-top: none;
+}
+
+.item.bl {
+  border-left: none;
+}
+
+.item.br {
+  border-right: none;
+}
+
+.item.bb {
+  border-bottom: none;
+}
+
+p#result {
+  color: green;
+  padding: 1em;
+  margin-top: 1em;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.disable {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.clicked {
+  background-color: seagreen;
+}
+
+footer p {
+  color: black;
+  padding: 1em;
+  border-top: 1px solid black;
+}
+
